@@ -88,6 +88,6 @@ month_names = {
 }
 
 if date == 14 and month == 10 and century == 10 and year == 66:
-    print(f"On that fateful {day}, 14 October 1066, the Battle of Hastings took place!")
+    print(f"On that fateful Sunday, on the 14 October 1066, the Battle of Hastings took place!")
 else:
     print(f"The {date} {month_names[month]} {century}{year} is a {day}.")
