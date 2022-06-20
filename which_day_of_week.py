@@ -55,33 +55,19 @@ if month == 1 or month == 2:
 # Calculates final code
 code = (dayMonth_code + year_code) - int((dayMonth_code + year_code) / 7) * 7 if dayMonth_code + year_code > 6 else dayMonth_code + year_code
 
-# Checks against day of the week values
-if code == 1:
-    day = "Sunday"
-elif code == 2:
-    day = "Monday"
-elif code == 3:
-    day = "Tuesday"
-elif code == 4:
-    day = "Wednesday"
-elif code == 5:
-    day = "Thursday"
-elif code == 6:
-    day = "Friday"
-elif code == 0:
-    day = "Saturday"
-
 # Returns the results
+days = ["Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+
 month_names = {
-    1 : "January",
-    2 : "February",
-    3 : "March",
-    4 : "April",
-    5 : "May",
-    6 : "June",
-    7 : "July",
-    8 : "August",
-    9 : "September",
+    1  : "January",
+    2  : "February",
+    3  : "March",
+    4  : "April",
+    5  : "May",
+    6  : "June",
+    7  : "July",
+    8  : "August",
+    9  : "September",
     10 : "October",
     11 : "November",
     12 : "December"
@@ -90,4 +76,4 @@ month_names = {
 if date == 14 and month == 10 and century == 10 and year == 66:
     print(f"On that fateful Sunday, on the 14 October 1066, the Battle of Hastings took place!")
 else:
-    print(f"The {date} {month_names[month]} {century}{year} is a {day}.")
+    print(f"The {date} {month_names[month]} {century}{year} is a {days[code]}.")
