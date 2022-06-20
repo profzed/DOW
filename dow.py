@@ -1,10 +1,10 @@
 # Gets century, year, month and date
 while 1:
     try:
-        century = int(input("Century (e.g. 10): "))
-        year = int(input("Year (e.g. 66): "))
-        month = int(input("Month (e.g. 10): "))
-        date = int(input("Date (e.g. 14): "))
+        century = int(input("Century (e.g. 20): "))
+        year = int(input("Year (e.g. 22): "))
+        month = int(input("Month (e.g. 06): "))
+        date = int(input("Date (e.g. 18): "))
 
         break
     except:
@@ -73,7 +73,4 @@ month_names = {
     12 : "December"
 }
 
-if date == 14 and month == 10 and century == 10 and year == 66:
-    print(f"On that fateful Sunday, on the 14 October 1066, the Battle of Hastings took place!")
-else:
-    print(f"The {date} {month_names[month]} {century}{year} is a {days[code]}.")
+print(f"The {date} {month_names[month]} {century}{year} is a {days[code]}.")
